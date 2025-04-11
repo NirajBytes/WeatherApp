@@ -19,13 +19,15 @@
     <div class="mainContainer">
      <form action="Myservlet" method="post" class="searchInput">
             <input type="text" placeholder="Enter City Name" id="searchInput" value="New Delhi" name="city"/>
-            <button id="searchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button id="searchButton" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+
       </form>
         <div class="weatherDetails">
             <div class="weatherIcon">
                 <img src="" alt="Clouds" id="weather-icon">
                 <h2>${temperature} °C</h2>
-                 <input type="hidden" id="wc" value="${weatherCondition}"> </input>
+                 <input type="hidden" id="wc" value="${weatherCondition}">
+
             </div>
             
             <div class="cityDetails">        
